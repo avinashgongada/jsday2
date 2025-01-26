@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="day2.css">
+</head>
+<body>
+    <script src="day2.js"></script>
+    <h1>JAVA SCRIPT SECOND TASK </h1>
+    <p>java script operators and type conversions </p>
+
+    <h2> JS.OPERATORS</h2>
+    <p>1.Arithamatic operators</p>
+    <p>2.Assaignment operators</p>
+    <p>3.Comparision poerators</p>
+    <p>4.Logical operators</p>
+    <p>5.Terinary (or) Conditional operators</p>
+
+    <h1>1.ARITHAMATIC OPERARTORS</h1>
+    <p> +, -, *, /, %, **, ++, --</p>
+    <script>
+        var a=5
+        var b=4
+        console.log(a+b)
+        console.log(a-b)
+        console.log(a*b)
+        console.log(a/b)
+        console.log(a%b)
+        console.log(a**b)
+        console.log(a++)
+        console.log(++a)
+        console.log(--b)
+        console.log(b--)
+        console.log(b)
+    </script>
+    <h1>2.ASSAIGNMENT OPERATORS</h1>
+    <p>Assignment operators. An assignment operator assigns a value to its left operand based on the value of its right operand. The simple assignment operator is equal ( = ), which assigns the value of its right operand to its left operand.</p>
+    <script>
+        var a=10
+        var b=50
+        
+        a+= 10
+        console.log(a)  // output a=10+10= 20...
+        a+=10
+        console.log(a)  // output a=20+10=30 beacause already a value changed as 20...
+        a*=10
+        console.log(a)  // output a=30*10=300 beacuse now a value is 30..
+        b-=10
+        console.log(b)  // output b=50-10=40 
+        b-=10
+        console.log(b)  // output b=40-40=30
+        b%=10
+        console.log(b)  // output b=b%30 b=30%30=0  it will print reminder
+    </script>
+    <h1>3.COMPARISION OPERATORS</h1>
+    <p>Comparison operators are used in logical statements to determine equality or difference between variables or values.</p>
+    <p>1.==     equal to (or) double operator</p>  
+    <p>2.===    equal value and equal type (or) strict operator</p>
+    <p>3.!=     not equal</p>
+    <p>4.!==	not equal value or not equal type</p>
+    <p>5.>	    greater than</p>
+    <p>6.<	    less than</p>
+    <p>>=	    greater than or equal to</p>
+    <p><=	    less than or equal to</p>
+
+    <script>
+        var a=100
+        var b="100"
+        console.log(a==b)   //output = true beacuse its print value not data type in both cases value is 100
+        console.log(a===b) // output = false because its both values and data types ..here value is same but data types diffrent
+        console.log(!(a==b)) // output = false acctually both are equal but we given ! condition thats why output given false
+        console.log(!(a===b)) // output = true 
+        var a=200
+        var b=100
+        console.log(a<b)    // output = false
+        console.log(a>b)    // output = true
+        console.log(a<=b)   // output = false
+        console.log(a>=b)   // output = true
+    </script>
+    <h1>4.LOGICAL OPERATORS</h1>
+    <P>Logical operators are used to determine the logic between variables or values.
+
+        Given that x = 6 and y = 3, the table below explains the logical operators:</P>
+    <p> && (and), || (or), ! (not)</p>
+    <script>
+       var a=6
+       var b=3
+       console.log((a>b)&&(b<a)) // T && T = TRUE
+       console.log((a<b)&&(b<a)) // F && T = FALSE
+       console.log((b<a)&&(a<b)) // T && F = FALSE
+       console.log((a<b)&&(b>a)) // F && F = FALSE
+
+       console.log((a>b)||(b<a)) // T && T = TRUE
+       console.log((a<b)||(b<a)) // F && T = TRUE
+       console.log((b<a)||(a<b)) // T && F = TRUE
+       console.log((a<b)||(b>a)) // F && F = FALSE
+
+       console.log(!(a>b))  // !T = FALSE
+       console.log(!(a<b))  // !F = TRUE
+       console.log(!(b<a))  // !T = FALSE
+       console.log(!(a<b))  // !F = TRUE
+   
+    </script>
+    <h1>5.TERNARY OPERATORS</h1>
+    <p>The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if...else statement.</p>
+    
+    <p>1. Expand the script to include a ternary operation that checks if a user is an adult (18+) or a minor.
+    </p>
+    <p>2. 
+          Grade Classification: Declare a variable score and set it to a value between 0 and 100.
+          Use nested ternary operators to classify the score into grades: A (>= 90), B (>= 75), C (>= 60), D (>= 45), and F (below 45). Log the grade.
+        </p>
+    <p>3. 
+          Temperature Check: Declare a variable temperature and 
+          use nested ternary operators to categorize it as "Hot" (above 30), "Warm" (20-30), "Cool" (10-19), and "Cold" (below 10). Log the result.
+        </p>
+    <p>4. Age Group: Declare a variable age and 
+          use the ternary operator to classify the age into "Child" (0-12), "Teen" (13-19), "Adult" (20-64), and "Senior" (65 and above). Log the result.
+    <p>5. Write a JavaScript script that uses the ternary operator to determine if a number is even or odd.
+    </p>  
+       </p>
+    <p></p>
+    <script>
+        var a=18
+        var b=(a>=18)? console.log("adult"):console.log("minor")  // output = adult
+        var b=(a<18) ? console.log("adault"):console.log("minor") // output = minor
+    </script>
+
+    <script>
+        var a=90
+        var b=(a>=90)? console.log("GRADE-A"):console.log("GRADE-B")
+        var b=(a<90) ? console.log("GRADE-A"): b=(a>=75)? console.log("GRADE-B"):console.log("GRADE-C")
+        var b=(a<=75)? ("GRADE-B"):b=(a>=60)? ("GRADE-C"):("GRADE-D")
+        console.log(b)
+        var b=(a<=60)? ("GRADE-B"):b=(a<=60)? ("GRADE-C"):("GRADE-D")
+        console.log(b)
+
+    </script>
+
+    <script>
+        var hot=30
+        var warm=25
+        var cool=15
+        var cold=5
+
+        var warm=(warm<30)? ("hot"):("cool")
+        console.log(warm)
+        var hot=(hot<30)? ("cold"):("warm")
+        console.log(hot)
+        var hot=(hot<30)? ("warm"):hot=(hot>=30)? ("cold"):("cool")
+        console.log(hot)
+        var cold=(cold<5)? ("cold"): cold=(cold<=5)? ("cold"):("cool")
+        console.log(cold)
+    </script>
+    <script>
+        var child=10
+        var teen=15
+        var adult=25
+        var senior=70
+
+        var senior=(senior<30)? ("adult"):senior=(senior=70)?("senior"):("child")
+        console.log(senior)
+        var adult=(adult>30)? ("adult"):adult=(adult<=25)? ("adult"):("teen")
+        console.log(adult)
+        var child=(teen<30)? ("teen"): ("senior")
+        console.log(child)
+        var senior=(senior<=5)? ("teen"):  ("child")
+        console.log(senior)
+    </script>
+
+    <script>
+        var a=100
+        var b=(a%2==0)? ("it is even"):("it is odd")
+        console.log(b)
+        var b=(a%2 !==0)? ("it is even "):("it is odd")
+        console.log(b)
+    </script>
+</body>
+</html>
